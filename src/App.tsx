@@ -18,14 +18,9 @@ export default function App() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="p-2 rounded-full bg-gradient-to-r from-green-500 to-red-500 text-white">
-                <Flag className="w-6 h-6" />
-              </div>
+              <div className="p-2 rounded-full bg-red  border border-2 w-10 h-10"></div>
               <div>
                 <h1 className="text-2xl font-bold">Kenya Government Hierarchy</h1>
-                <p className="text-muted-foreground">
-                  Structure of power from the highest to lowest office
-                </p>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -97,9 +92,6 @@ export default function App() {
         {/* Stats Overview */}
         <HierarchyStats />
 
-        {/* Constitutional Framework */}
-        <ConstitutionInfo />
-
         {/* Government Content */}
         {viewMode === 'list' ? (
           <div className="mb-8">
@@ -119,12 +111,15 @@ export default function App() {
                 Click on branches to expand their structure, then click on individual offices for detailed information and Wikipedia sources.
               </p>
             </div>
-            <Card className="p-6">
+            <Card className="p-6 border-none">
               <NodeChart />
             </Card>
           </div>
         )}
 
+        {/* Constitutional Framework */}
+        <ConstitutionInfo />
+        
         {/* Footer Info */}
         <footer className="mt-12 pt-8 border-t">
           <div className="text-center text-sm text-muted-foreground">
