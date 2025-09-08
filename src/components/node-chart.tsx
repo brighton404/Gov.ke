@@ -582,18 +582,9 @@ export function NodeChart() {
   };
 
   return (
-    <div className="w-full h-full min-h-[600px] relative overflow-auto">
+    <div className="w-full h-fit min-h-[600px] relative overflow-auto">
       {/* Central Government Node */}
       <div className="flex flex-col items-center pt-8">
-        <div className="mb-8">
-          <Card className="p-6 bg-gradient-to-r from-green-500 to-red-500 text-white border-none">
-            <div className="text-center">
-              <h2 className="text-xl font-bold">Republic of Kenya</h2>
-              <p className="text-sm opacity-90">Constitutional Democracy</p>
-            </div>
-          </Card>
-        </div>
-
         {/* Branch Nodes */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-6xl">
           {nodeData.map((branch, branchIndex) => (
