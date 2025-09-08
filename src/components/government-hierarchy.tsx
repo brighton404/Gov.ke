@@ -3,6 +3,7 @@ import { Badge } from "./ui/badge";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "./ui/collapsible";
 import { ChevronDown, ChevronRight, Crown, Users, Scale, MapPin } from "lucide-react";
 import { useState } from "react";
+import * as React from "react";
 
 interface Position {
   title: string;

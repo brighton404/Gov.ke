@@ -1,3 +1,4 @@
+import * as React from "react";
 import { useState } from "react";
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
@@ -586,7 +587,7 @@ export function NodeChart() {
       {/* Central Government Node */}
       <div className="flex flex-col items-center pt-8">
         {/* Branch Nodes */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-6xl">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 max-w-6xl pb-6">
           {nodeData.map((branch, branchIndex) => (
             <div key={branch.id} className="flex flex-col items-center">
               {/* Branch Root Node */}
@@ -622,7 +623,7 @@ export function NodeChart() {
 
               {/* Position Nodes */}
               {expandedBranches.includes(branch.id) && (
-                <div className="space-y-6">
+                <div className="">
                   {branch.positions
                     .sort((a, b) => a.level - b.level)
                     .map((position, posIndex) => (
