@@ -18,7 +18,6 @@ export default function App() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="p-2 rounded-full bg-red  border border-2 w-10 h-10"></div>
               <div>
                 <h1 className="text-2xl font-bold">Kenya Government Hierarchy</h1>
               </div>
@@ -42,10 +41,6 @@ export default function App() {
                   Chart View
                 </Button>
               </div>
-              <Badge variant="outline" className="hidden sm:inline-flex">
-                <Info className="w-3 h-3 mr-1" />
-                Republic of Kenya
-              </Badge>
             </div>
           </div>
         </div>
@@ -111,7 +106,7 @@ export default function App() {
                 Click on branches to expand their structure, then click on individual offices for detailed information and Wikipedia sources.
               </p>
             </div>
-            <Card className="p-6 border-none">
+            <Card className="p-6 border-none w-full">
               <NodeChart />
             </Card>
           </div>
