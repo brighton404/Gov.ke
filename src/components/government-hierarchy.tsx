@@ -461,7 +461,7 @@ export function GovernmentHierarchy() {
             onOpenChange={() => toggleBranch(branch.name)}
           >
             <CollapsibleTrigger className="w-full">
-              <CardHeader className="hover:bg-accent/50 transition-colors">
+              <CardHeader className="hover:bg-accent/50 transition-colors pt-3 pb-2">
                 <div className="flex items-center gap-3">
                   <div className={`p-2 rounded-full text-white ${branch.color}`}>
                     {branch.icon}
